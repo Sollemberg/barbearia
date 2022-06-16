@@ -1,0 +1,93 @@
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa{
+    position:relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline-block;
+    margin:0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+#banner{
+    width: 100%;
+    
+    
+}
+
+.principal{
+    background-color: #cccccc;
+    padding: 30px;
+}
+
+.tituli-centralizado{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    
+}
+
+#missao{
+    font-size: 20px;
+}
+em strong{
+    color: red;
+}
+
+.beneficios{
+    background-color: white;
+    padding: 20px;
+}
+
+.lista-inline-block{
+    display: inline-block; /*O display inline block ocupa só o tamnho do seu conteúdo e me deixa mecher na sua altura e lagura*/
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+    
+}
+
+.itens{
+    font-style: italic;
+}
+
+.imagembeneficio{
+    width: 50%;
+}
+
+footer{
+    background: url("imagens-produtos/bg.jpg");
+    text-align: center;
+}
+
+footer p{
+    color: bisque;
+    font-size: 13px;
+    margin-top: 20px;
+}

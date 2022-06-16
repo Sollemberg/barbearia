@@ -1,0 +1,291 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header{
+    background-color: hsl(0, 0%, 73%);
+    padding: 20px 0;
+}
+
+.caixa{
+    position:relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin:0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    padding: 50px 0;
+    padding-top: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.produtos li:hover{
+    border: 3px solid #C78C19;
+}
+
+.produtos li:hover h2{
+    font-size: 35px;
+}
+
+.produtos li:active{
+    background-color: black;
+    color: #BBBBBB;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.descricao{
+    font-size: 18px;
+
+}
+
+.preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0 1em;
+    clear: left;
+}
+
+.utensilhos{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.principal{ 
+    padding: 3em 0;
+    background-color: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.mapa {
+    margin: 0 ;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios{
+    width: 640px;
+    margin: 2em auto;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens{
+    line-height: 1.5;
+}
+
+.itens::before{
+    content: "✭";
+    /*Essas duas tgs é pra alterar na apresentação sem mecher no html*/
+    font-weight: bold;
+}
+
+.itens:first-child{ /*:FIRST-CHILD  ele pega o primeiro filho do que vem antes no caso os items. mas posso pegar o last child  ou ate mesmo o N-CHILD(COLOCA QUAL POSIÇÃO PRECISA SEER ALTERADA)*/
+    font-weight: bold;
+}
+
+.imagem-beneficio{
+    width: 60%;
+    opacity: 1;
+    transition: 350ms;
+    box-shadow: 10px 10px 10px black;
+}
+
+.imagem-beneficio:hover{
+    opacity: 0.3;
+}
+
+
+.video{
+    width: 560px;
+    margin: 2em auto;
+}
+
+
+
+
+
+
+/*Daqui pra baixo é a tabela*/
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{ /*a virgula serve para atribuir todas as propriedades para um outro seletor*/
+    display: block;
+    margin: 0 0 10px;
+    padding: 8px 20px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: rgba(255, 228, 196, 0.836);
+    font-size: 18px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 80px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: darkorange;
+    transform: scale(1.2)
+}
+
+table{
+    margin: 20px 0px 40px;
+}
+
+thead{
+    background-color: #242424;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: solid 1px black;
+    padding: 8px 15px;
+}
+
+footer{
+    text-align: center;
+    background: url("imagens-produtos/bg.jpg");
+    padding: 40px 0px;
+}
+
+footer p{
+    color: bisque;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+    /*Respon por toda parte reponssiva do site*?
+}
+
+
+
+Àrea de anotação
+
+/*
+main > p{} -- esse comando serve para o P filho da tag main, só ele será selecionado.
+
+img + p{} -- nesse caso ele seleciona só primeiro P depois da imagem 
+
+img ~ p{} -- ele seleciona todos os paragrafos que vem depois de uma imagem
+
+.principal p:not(#missao){ background: blue} -- Esta sentença serve para excluir alguma coisa, no caso todos os paragrafos vão ficar azuis, menos os que estiverem englobado na classe missão
+*/

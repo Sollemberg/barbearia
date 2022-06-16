@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rest.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="caixa">
+         <h1><img src="imagens-produtos/logo.png" alt="Logo da Barbearia Alura"></h1>
+ 
+         <nav>
+             <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="produtos.html">Produtos</a></li>
+                 <li><a href="contato.html">Contatos</a></li>
+             </ul>
+         </nav>
+        </div>
+     </header>  
+     <main>
+        <form>
+            <label for="nome-sobrenome">Nome e Sobrenome</label> <!-- Label a tag que se usa para dar nome ao que se pede na caixa-->
+            <input type="text" id="nome-sobrenome" class="input-padrao" required> <!--Todo INPUT precisa ter uma ID-->
+            <!--REQUAID vem dizer pro meu site que aquele campo precisa ser preenchido, de forma obrigatoria-->
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"> <!--PLACEHOLDER vem deixar o com uma pespectiva daquilo que queremos que ele conha de respostas-->
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"> <!--Usamos o type TEL pra facilitar que esta usando por meio do celular, olhar no site MOBILE INPUT TYPES-->
+
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="60" rows="10" id="mensagem"></textarea required> 
+            <!--textarea serve como um lugar para uma digitação mais libre 
+            COLS é o numero de coluna da caixa(seve para aumentar a sua largura)
+            ROWS é o numero de linhas (server para saber o tamnho dele em altura) mas geralmente não precisa mexer muuito por aqui pois isso dá pra resolver pelo css-->
+
+            <fieldset> <!--usa-se de forma especifia para agrupar dados de um formulario ou daods de um cartão-->
+                <legend>Como prefere o nosso contato?</legend> <!--usa o LEGEND por que dentro do fildset não se usa a tag <P>-->
+                <label for="email-radio"><input type="radio" name="contato" value="emai" id="email-radio">Email</label>
+                 <!--Radio cria auternativa de marcação-->
+                
+                 <label for="radio-telefone"><input type="radio" name="contato" ivalue="telefone" id="radio-telefone">Telefone</label>
+                 <!--name contato nas tres opcões serve para quando marcar um desmarcar o outro-->
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">WhatsApp</label>
+                
+            </fieldset>
+
+            <fieldset> <!--criação de droop down-->
+                <legend>Qual horário prefere ser atendido</legend>
+                <select name="" id="">
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label><input type="checkbox" class="checkbox"> receber nossas novidades por email?</label>
+
+            <input type="submit" value="Enviar Formulário" class="enviar"> <!--Neste caso do INPUT SUBMIT não precisa de LABEL-->
+        </form>
+        <table>
+           <thead> <!--cabeçalho da tabela-->
+                <tr> 
+                    <th>Dias</th> 
+                    <th>Horários</th>
+                </tr>
+           </thead>
+           
+           <tbody>
+                <tr> <!--linha da tabela-->
+                    <td>Segunda</td> <!--célula da tabela-->
+                    <td>8hrs -> 22hr</td>
+                </tr>
+
+                <tr>
+                    <td>Quarta</td>
+                    <td>8hrs -> 22hr</td>
+                </tr>
+
+                <tr>
+                    <td>Sexta</td>
+                    <td>8hrs -> 22hr</td>
+                </tr>
+           </tbody>
+            
+        </table>
+     </main>
+     
+     <footer>
+        <img src="imagens-produtos/logo-branco.png" alt="Logo Barbearia Alura">
+        <p>&copy; Copyright Barbearia Alura - 2019</p>
+     </footer>
+</body>
+</html>
